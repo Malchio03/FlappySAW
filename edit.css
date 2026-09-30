@@ -1,0 +1,126 @@
+/* Griglia di selezione */
+.selection-grid {
+    display: flex; 
+    gap: 15px; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-bottom: 25px;
+}
+
+.selection-grid input[type="radio"] { 
+    display: none; 
+}
+
+/* Stile Avatar */
+.avatar-option { 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.avatar-option img {
+    width: 60px; 
+    height: 60px;
+    border: 3px solid transparent; 
+    border-radius: 50%;
+    cursor: pointer; 
+    transition: transform 0.2s;
+}
+
+.selection-grid input[type="radio"]:checked + img {
+    border-color: #eebb18; 
+    transform: scale(1.1); 
+    box-shadow: 0 0 10px gold;
+}
+
+/* Stile Oggetti Bloccati */
+.locked-item { 
+    opacity: 0.5; 
+    filter: grayscale(100%); 
+    cursor: not-allowed; 
+    position: relative; 
+}
+
+.lock-icon {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    font-size: 24px; 
+    color: #333; 
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%; 
+    padding: 5px;
+}
+
+/* Stile Bottoni/Etichette Temi */
+.theme-label {
+    padding: 10px 20px; 
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+    cursor: pointer; 
+    font-family: 'Jersey 10', sans-serif; 
+    font-size: 1.2rem;
+    transition: 0.2s; 
+    display: block; 
+    min-width: 80px; 
+    text-align: center;
+}
+
+.selection-grid input[type="radio"]:checked + .theme-label {
+    border-color: #eebb18; 
+    background-color: #fff8db; 
+    color: #d89e00; 
+    box-shadow: 0 3px 0 #d89e00; 
+    transform: translateY(-3px);
+}
+
+/* Varianti Header (Spostate da inline a classi) */
+.header-classic-style { 
+    border-style: dashed; 
+}
+.header-gold-style { 
+    background: #fffbe6; 
+    color: #d89e00; 
+}
+.header-dark-style { 
+    background: #333; 
+    color: #fff; 
+}
+.header-minimal-style { 
+    background: #fff; 
+}
+.theme-locked-bg { 
+    background: #ddd; 
+    border-style: none; 
+}
+
+.buy-link { font-size: 12px; 
+    margin-top: 5px; 
+    color: #007bff; 
+    text-decoration: none; 
+}
+.buy-link:hover { 
+    text-decoration: underline; 
+}
+
+.btn-save-container {
+    text-align: center; 
+    margin-top: 30px; 
+}
+.btn-shop-container { 
+    text-align: center; 
+    margin-top: 15px; 
+}
+.shop-link { 
+    color: #008194; 
+    font-weight: bold; 
+    text-decoration: none; 
+}
+
+/* Forza il testo nero anche nel tema Glass */
+.profile-card.card-glass {
+    color: #000 !important;
+}
+

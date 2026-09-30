@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Open Sans", Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg, #70c5ce 0%, #4ec6be 28.53%, #05575c 75.32%);
+}
+
+.wrapper {
+    width: 420px;
+    background-color: rgba(224, 255, 255, 0.296);
+    color: black;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.btn {
+    width: 100%; /* serve per allargare il bottone*/
+    background: rgba(135, 250, 225, 0.651);
+    border: none;   /* togliamo il contorno*/
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color:  black;
+    font-weight: 600; /* grassetto testo*/
+}
+
+.btn:hover {
+    background: rgb(135, 250, 225);
+    transform: scale(1.05); /* Si ingrandisce un pochino */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px; /* Spazio tra i campi */
+
+}
+
+.input-box input {
+    border: 2px solid black; /* togliamo il contorno*/
+    border-radius: 40px;
+    width: 80%;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.register-link {
+    text-align: center;
+}
+
+.register-link p a {
+    padding: 0;      /* Rimuove il padding di 10px ereditato da * */
+    margin-left: 5px; 
+}
+
+
+/* Register html */
+.register-page h1 {
+    text-align: center;
+}
+
+.register-page p {
+    text-align: center;
+}
+
+.login-link {
+    text-align: center;
+}
+
+.login-link p a {
+    padding: 0;      /* Rimuove il padding di 10px ereditato da * */
+    margin-left: 5px; 
+}
+
+.re-spazio {    /* Serve per lo spazio tra Ripeti password e il bottone*/
+    margin-top: 10px;
+}
+
+.back {
+    background-color: #fffefd5b; 
+    border: 2px solid white;    
+    color: white;               
+    padding: 15px 32px;        
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif; 
+    cursor: pointer;            
+    border-radius: 8px;         
+    outline: none;
+    display: block;          
+    width: fit-content;      
+    margin: 20px auto;       
+    text-decoration: none;   
+}
+
+/* Effetto quando passi sopra col mouse */
+.back:hover {
+    background-color: #4cbab9bc;
+    transform: scale(1.05); /* Si ingrandisce un pochino */
+}
+
+.classifica{
+    text-align: center;
+}
+
+.leaderboard-box table {
+    margin: 0 auto;        /* Centra la tabella nel box */
+    text-align: center;    /* Centra il testo dentro le celle */
+    width: 90%;            
+    border-collapse: collapse; 
+}
+
+.toggle-password {
+    position: absolute;
+    right: 57px; /* Distanza dal bordo destro */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+    padding: 0; /* Rimuove padding extra che sposta l'icona */
+}
+
+.input-box2 {
+    position: relative; 
+    width: 100%;
+    margin-bottom: 15px; /* Spazio tra i campi */
+}
+
+.input-box2 input {
+    border: 2px solid black; /* togliamo il contorno*/
+    border-radius: 40px;
+    width: 100%;
+}
+
+/* Regola unica per entrambi gli occhi */
+.toggle-password2, .toggle-password3 {
+    position: absolute;
+    right: 20px;          /* Distanza dal bordo destro dell'input */
+    top: 50%;             /* Centra verticalmente rispetto al box */
+    transform: translateY(-50%); 
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+    display: flex;        /* Aiuta l'allineamento dell'icona */
+    align-items: center;
+}

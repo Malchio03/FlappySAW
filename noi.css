@@ -1,0 +1,11 @@
+ .noi-img {
+        order: 2; /* Mette l'immagine sotto il testo */
+        margin-top: 90px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .noi-img img {
+        width: 90%; /* Non troppo grande su mobile */
+        max-width: 700px;
+    }

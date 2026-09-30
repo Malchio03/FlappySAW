@@ -1,0 +1,370 @@
+body {
+    font-family: "Jersey 10", sans-serif;
+    /* background: linear-gradient(245.59deg, #70c5ce 0%, #4ec6be 28.53%, #05575c 75.32%); */
+    background-color: #31827c;
+    min-height: 100vh; /* Cambiato da height a min-height */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Impila header e shop-layout verticalmente */
+    align-items: center;    /* Centra tutto orizzontalmente */
+    overflow-x: hidden;   
+    font-size: 26px;
+}
+
+h1 {
+    font-size: 100px;
+    padding-top: 20px;
+    color:white;
+}
+
+/* HEADER E NAVIGAZIONE */
+
+.shop-header { 
+    width: 100%;
+    max-width: 1200px;
+    text-align: center; 
+    color: white; 
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra bottoni e monete */
+}
+
+.coins-display { 
+    color: gold; 
+    font-size: 24px; 
+    font-weight: bold; 
+}
+
+.profilo, .back-btn {
+    color: white; 
+    text-decoration: underline;
+    font-size: 24px;
+    display: inline-block; 
+    margin: 10px auto;  
+    text-align: center;
+    transition: 0.3s;
+}
+
+.profilo:hover, .back-btn:hover {
+    background-color: #4cbab9bc;
+    transform: scale(1.05); /* Si ingrandisce un pochino */
+}
+
+/* LAYOUT PRINCIPALE */
+.shop-layout { 
+    display: flex; 
+    gap: 20px; 
+    padding: 20px;
+    align-items: flex-start; 
+    flex-wrap: nowrap; /* Di base restano affiancati */
+}
+
+
+body {
+    overflow-x: hidden;
+    min-height: 2vh;
+}
+
+.items-grid { 
+    flex: 1; 
+    display: flex; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+/* CARRELLO LATERALE */
+.cart-panel { 
+    width: 300px;
+    flex-shrink: 0; 
+    background: rgba(0,0,0,0.8); 
+    padding: 15px; 
+    border-radius: 10px; 
+    color: white; 
+    border: 2px solid #555; 
+    position: sticky; 
+    top: 20px;
+
+}
+
+.cart-item { 
+    display: flex; 
+    justify-content: space-between; 
+    margin-bottom: 8px; 
+    border-bottom: 1px solid #444; 
+    padding-bottom: 5px; 
+}
+
+.cart-total { 
+    text-align: right; 
+    font-size: 18px; 
+    margin-top: 10px;
+
+}
+
+.price-gold { 
+    color: gold; 
+}
+
+.cart-empty-form { 
+    text-align: center; 
+    margin-top: 5px; 
+}
+
+.empty-cart-msg { 
+    text-align: center;
+    color: #aaa; 
+}
+
+/* BOTTONI CARRELLO */
+
+.btn-buy { 
+    width: 100%; 
+    background: gold; 
+    color: black; 
+    font-weight: bold; 
+    padding: 10px;
+    border: none; 
+    cursor: pointer; 
+    margin-top: 15px; 
+    font-size: 16px; 
+} 
+
+.btn-buy:disabled { 
+    background: grey !important;
+    cursor: not-allowed; 
+}
+
+.btn-remove-item { 
+    background: none; 
+    border: none; 
+    color: red; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+.btn-empty-cart { 
+    background: none; 
+    border: none; 
+    color: #aaa; 
+    text-decoration: underline; 
+    cursor: pointer; 
+}
+
+/* ITEM CARDS */
+.item-card { 
+    width: 170px; 
+    background: #fff; 
+    border-radius: 10px; 
+    padding: 10px; 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between; 
+    border: 3px solid #ccc;
+    position: relative;
+}
+
+.item-card.owned { 
+    border-color: #00b894; 
+    background: #e6fffa; 
+
+}
+
+.item-img { 
+    width: 170px; 
+    height: 170px; 
+    object-fit: contain; 
+    margin-bottom: 5px; 
+}
+
+.item-description { 
+    font-size: 20px; 
+    color: #666; 
+    display: block; 
+    margin-bottom: 5px; 
+    line-height: 1.2; 
+
+}
+
+.item-price { 
+    color: #d63031; 
+    font-weight: bold; 
+    margin-top: auto; 
+    font-size: 1.1rem; 
+}
+
+.btn-add {
+    background: #00b894;
+    color: white; 
+    border: none; 
+    padding: 8px; 
+    border-radius: 5px; 
+    cursor: pointer;
+    width: 100%; 
+    margin-top: 10px; 
+    font-weight:bold;
+}
+
+.btn-add:disabled { 
+    background: #ccc; 
+    cursor: default; 
+}
+
+.status-owned-label { 
+    font-size: 11px; 
+    color: #00b894; 
+    font-weight: bold; 
+    margin-top: 5px; 
+}
+
+/* SISTEMA STELLINE MEDIA */
+
+.item-stars { 
+    margin: 2px 0;
+}
+
+.star-gold { 
+    color: gold; 
+}
+
+.star-grey { 
+    color: #ccc;
+}
+
+.vote-count { 
+    font-size: 10px; 
+    color: #666; 
+}
+
+/* SISTEMA VOTO UTENTE */
+
+.user-rating-box {
+    background: rgba(0,0,0,0.05);
+    border-radius: 8px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.rating-label { 
+    font-size: 10px; 
+    color: #555; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    display: block;
+}
+
+.star-rating-input { 
+    direction: rtl; 
+    display: inline-flex; 
+    justify-content: center; 
+}
+
+.star-rating-input input { 
+    display: none; 
+}
+
+.star-rating-input label { 
+    color: #ccc; 
+    font-size: 18px; 
+    cursor: pointer; 
+    transition: 0.2s; 
+    padding: 0 1px; 
+}
+
+.star-rating-input label:hover, 
+.star-rating-input label:hover ~ label, 
+.star-rating-input input:checked ~ label { 
+    color: #ff9f43; 
+}
+
+/* UTILITY */
+.form-full { 
+    width: 100%; 
+}
+.form-inline { 
+    display: inline; 
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Desktop piccoli / laptop (sotto i 1200px) */
+@media (max-width: 1200px) {
+    .cart-panel {
+        width: 260px;
+    }
+
+    .item-card {
+        width: 170px;
+    }
+}
+
+/* Tablet (sotto i 1024px) */
+@media (max-width: 1024px) {
+    .shop-header {
+        padding-top: 20px;
+    }
+
+    .shop-header h1 {
+        font-size: 1.8rem; /* Riduciamo leggermente il font se serve */
+        display: block;    /* Forza la visibilità */
+    }
+
+    .cart-panel {
+        width: 240px;
+    }
+
+    .item-card {
+        width: 160px;
+    }
+}
+
+/* Tablet / mobile grande (sotto i 900px) */
+@media (max-width: 900px) {
+    .shop-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .shop-header {
+        width: 100%;
+        order: 0; /* Forza l'header ad essere il primo elemento in alto */
+    }
+
+    .cart-panel {
+        width: 100%;
+        max-width: 420px;
+        position: static;
+        margin-bottom: 25px;
+        order: 1;
+    }
+
+    .items-grid {
+        width: 100%;
+        order: 2;
+        justify-content: center;
+    }
+}
+
+/* Mobile (sotto i 768px) */
+@media (max-width: 768px) {
+    .item-card {
+        width: calc(50% - 15px); /* 2 card per riga */
+        min-width: 140px;
+    }
+}
+
+/* Mobile piccolo (sotto i 480px) */
+@media (max-width: 480px) {
+    .shop-header {
+        padding-top: 15px;
+    }
+
+    .item-card {
+        max-width: 220px;
+    }
+}
